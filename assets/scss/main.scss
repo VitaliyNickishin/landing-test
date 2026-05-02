@@ -1,0 +1,29 @@
+//-------------bootstrap----------------
+
+// @import "../sources/bootstrap-4.1.1/scss/bootstrap-reboot";
+// @import "../sources/bootstrap-4.1.1/scss/bootstrap-grid";
+// @import "../sources/bootstrap-4.1.1/scss/bootstrap";
+
+//-------------slider slick-------------
+
+// @import "slick";
+// @import "slick-theme";
+
+//-------------ui kit-------------------
+@import "base/mixins";
+@import "base/variables";
+@import "base/common";
+
+//-------------pages--------------------
+// @import "page/home";
+// @import "page/single-post";
+
+//-------------components--------------------
+
+@import "components/btn";
+@import "components/list-social";
+
+//-------------layouts--------------------
+@import "layouts/footer";
+@import "layouts/header";
+//-------------templates-parts--------------------

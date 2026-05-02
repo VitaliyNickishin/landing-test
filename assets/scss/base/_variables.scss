@@ -1,0 +1,31 @@
+//colors
+$white: #ffffff; //
+$black: #000000; //
+$gray: #828282; //
+$gray-100: #e0e0e0;
+
+$border-color: $gray-100;
+$transition: all 0.2s ease-out;
+
+//Themes colors
+$primary_color: $black; //
+$main-bg: $white; //
+$secondary_color: $gray; //
+
+//font-size
+$small-font-size: 12px;
+$base-font-size: 1rem;
+$medium-font-size: 18px;
+$large-font-size: 24px;
+
+// fonts
+$main_font:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  Oxygen-Sans,
+  Ubuntu,
+  Cantarell,
+  sans-serif;
