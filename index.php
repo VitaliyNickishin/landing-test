@@ -21,8 +21,8 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                    <div class="section-title">
-                            <h1 class="title">Landing page title</h1>
+                    <div class="">
+                            <h1 class="display-3 ls-1 section-title text-center">Landing page title</h1>
                         </div>
                     </div>
                 </div>

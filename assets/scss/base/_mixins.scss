@@ -1,17 +1,6 @@
-///
-/// Some default breakpoints setup that work, time saver while keeping your breakpoints consistent
-///
-
-$breakpoints: (
-  "phone": 550px,
-  "tablet": 768px,
-  "lg": 991px,
-  "desktop": 1441px,
-);
-
 @mixin mq($width, $type: min) {
-  @if map_has_key($breakpoints, $width) {
-    $width: map_get($breakpoints, $width);
+  @if map_has_key($grid-breakpoints, $width) {
+    $width: map_get($grid-breakpoints, $width);
 
     @if $type==max {
       $width: $width - 1px;
@@ -21,53 +10,4 @@ $breakpoints: (
       @content;
     }
   }
-}
-
-@mixin mediaMax($max) {
-  @media screen and (max-width: #{$max}px) {
-    @content;
-  }
-}
-
-@mixin mediaMin($min) {
-  @media screen and (min-width: #{$min}px) {
-    @content;
-  }
-}
-
-@mixin media($min, $max) {
-  @media screen and (min-width: #{$min}px) and (max-width: #{$max}px) {
-    @content;
-  }
-}
-
-/// Animate css properties
-// usage
-// scss - @include animate(color);
-//     or @include animate(color width);
-//     or @include animate(color width, 1s, linear);
-//
-$animation-speed: 0.2s !default;
-
-@mixin animate($properties, $duration: $animation-speed, $easing: linear) {
-  $list: ();
-
-  @each $prop in $properties {
-    $str: #{$prop} #{$duration} #{$easing};
-    $list: join($list, #{$str}, comma);
-  }
-
-  transition: $list;
-}
-
-@mixin space-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

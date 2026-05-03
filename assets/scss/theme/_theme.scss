@@ -1,0 +1,104 @@
+//colors
+$white: #ffffff; //
+$black: #000000; //
+$gray: #828282; //
+$gray-100: #e0e0e0;
+
+//Themes colors
+$primary: $black; //
+$secondary: $gray; //
+
+// Body
+$body-color: $black !default;
+$body-secondary-color: $secondary !default; // new var for text-muted
+
+// Fonts
+$font-family-sans-serif:
+  "Inter",
+  -apple-system,
+  "BlinkMacSystemFont",
+  "Segoe UI",
+  "Roboto",
+  "Helvetica Neue",
+  "Arial",
+  "Noto Sans",
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+
+$font-size-base: 1rem !default;
+$small-font-size: 0.8em !default;
+$md-small-font-size: 0.875em !default;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$text-muted: $secondary !default;
+
+// Grid
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1328px,
+) !default;
+
+// Grid columns
+$container-padding-x: 2rem !default;
+
+// Headings
+$headings-font-weight: $font-weight-bold !default;
+$display-font-weight: $font-weight-bold !default;
+$headings-line-height: 1 !default;
+// $h1-font-size: 64px !default;
+// $display-font-sizes: (
+//   1: 4.5rem,
+//   2: 4rem,
+//   3: 3.625rem,
+//   4: 2.5rem,
+//   5: 1.875rem,
+//   6: 1.5rem,
+// ) !default;
+
+// Other
+$border-color: $gray-100;
+$transition: all 0.2s ease-out;
+
+// Navbar
+$navbar-light-brand-color: $primary !default;
+$navbar-nav-link-padding-x: 1.5rem !default;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,%3Csvg width='52' height='31' viewBox='0 0 52 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18 15C18 13.3431 18.747 12 19.6685 12H49.3315C50.253 12 51 13.3431 51 15C51 16.6568 50.253 18 49.3315 18H19.6685C18.747 18 18 16.6568 18 15Z' fill='black'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.325684 28C0.325684 26.3431 1.48019 25 2.90434 25H48.747C50.1712 25 51.3257 26.3431 51.3257 28C51.3257 29.6569 50.1712 31 48.747 31H2.90434C1.48019 31 0.325684 29.6569 0.325684 28Z' fill='black'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 3C0 1.34315 1.1545 0 2.57865 0H48.4213C49.8455 0 51 1.34315 51 3C51 4.65685 49.8455 6 48.4213 6H2.57865C1.1545 6 0 4.65685 0 3Z' fill='black'/%3E%3C/svg%3E%0A") !default;
+// $navbar-toggler-icon-close-bg: url("data:image/svg+xml,%3Csvg width='68' height='40' viewBox='0 0 68 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.2104 0.87923C12.4312 -0.240957 14.2014 -0.298392 15.1643 0.750945L46.1582 34.5286C47.1211 35.5779 46.912 37.3367 45.6912 38.4569C44.4704 39.5771 42.7002 39.6345 41.7373 38.5852L10.7434 4.8075C9.78055 3.75816 9.98965 1.99942 11.2104 0.87923Z' fill='black'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M45.9998 1.61632C47.1846 2.77453 47.338 4.539 46.3424 5.55739L14.2966 38.3387C13.3011 39.3571 11.5336 39.2438 10.3488 38.0856C9.16398 36.9274 9.01056 35.1629 10.0061 34.1445L42.0519 1.36315C43.0475 0.344769 44.815 0.458116 45.9998 1.61632Z' fill='black'/%3E%3C/svg%3E%0A");
+$navbar-light-toggler-border-color: none !default;
+$navbar-toggler-focus-width: none !default;
+
+$navbar-toggler-padding-y: 0 !default;
+$navbar-toggler-padding-x: 0 !default;
+
+$navbar-light-color: $primary !default;
+$navbar-light-hover-color: $secondary !default;
+$navbar-light-active-color: $secondary !default;
+
+//btn
+$btn-font-weight: $font-weight-medium !default;
+$btn-padding-y: 0.8125rem !default;
+$btn-padding-x: 1.5rem !default;
+
+// offcanvas
+// $btn-close-bg: url("data:image/svg+xml,%3Csvg width='68' height='40' viewBox='0 0 68 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.2104 0.87923C12.4312 -0.240957 14.2014 -0.298392 15.1643 0.750945L46.1582 34.5286C47.1211 35.5779 46.912 37.3367 45.6912 38.4569C44.4704 39.5771 42.7002 39.6345 41.7373 38.5852L10.7434 4.8075C9.78055 3.75816 9.98965 1.99942 11.2104 0.87923Z' fill='black'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M45.9998 1.61632C47.1846 2.77453 47.338 4.539 46.3424 5.55739L14.2966 38.3387C13.3011 39.3571 11.5336 39.2438 10.3488 38.0856C9.16398 36.9274 9.01056 35.1629 10.0061 34.1445L42.0519 1.36315C43.0475 0.344769 44.815 0.458116 45.9998 1.61632Z' fill='black'/%3E%3C/svg%3E%0A") !default;
+$offcanvas-horizontal-width: 100% !default;
+$btn-close-opacity: 1 !default;
+$btn-close-focus-shadow: none !default;

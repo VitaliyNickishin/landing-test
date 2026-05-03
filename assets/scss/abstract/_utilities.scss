@@ -1,0 +1,26 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "letter-spacing": (
+      property: letter-spacing,
+      class: ls,
+      values: (
+        1: 0.1rem,
+        2: 0.2rem,
+        3: 0.3rem,
+        tight: -2%,
+      ),
+    ),
+    //   "font-weight": map-merge(
+    //     map-get($utilities, "font-weight"),
+    //     (  values:
+    //     (
+    //       normal: $font-weight-normal,
+    //       semibold: $font-weight-semibold,
+    //       bold: $font-weight-bold,
+    //       light: $font-weight-light
+    //     )
+    //   ),
+     // ),
+  )
+);

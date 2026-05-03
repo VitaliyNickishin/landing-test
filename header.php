@@ -18,28 +18,40 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="header">
-			<div class="container">
-				<div class="header-inner">
-					<a href="/" class="logo">
-						<img src="./theme/img/logo.svg" alt="logo">
-					</a>
-					<nav class="nav">
-						<ul>
-							<li class="mobile-menu">
-								<button class="burger close" type="button"><span></span></button>
-							</li>
-							<li><a href="#services">Services</a></li>
-							<li><a href="#work-process">Work process</a></li>
-							<!-- <li><a href="#contact-us">Contact us</a></li> -->
-							<li><a href="#cases">Cases</a></li>
-							<li><a href="#testiomonials">Testimonials</a></li>
-							<li><a href="#leadereship">Leadership</a></li>
-						</ul>
-						<button type="button" class="button openmodal">Contact now</button>
-						<button class="burger" type="button"><span></span></button>
-					</nav>
+    <header class="header py-5">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg">
+				<div class="d-flex justify-content-between w-100">
+					<a class="navbar-brand fw-medium" href="#">Site name</a>
+
+					<!-- Burger -->
+					<button class="navbar-toggler" type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#mobileMenu"
+						aria-controls="mobileMenu">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Offcanvas -->
+					<div class="offcanvas offcanvas-lg offcanvas-start" tabindex="-1" id="mobileMenu">
+					
+						<div class="offcanvas-header mt-5">
+							<h5 class="offcanvas-title fw-medium">Site name</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+						</div>
+
+						<div class="offcanvas-body ms-lg-auto text-center mt-lg-0 mt-4">
+							<div class="navbar-nav align-items-center">
+							<a class="nav-link active" href="#">Page</a>
+							<a class="nav-link" href="#">Page</a>
+							<a class="nav-link" href="#">Page</a>
+							</div>
+
+							<button class="btn btn-primary ms-lg-4 mt-lg-0 mt-5">Send form</button>
+						</div>
+					</div>
 				</div>
-			</div>
-		</header>
+			</nav>
+		</div>
+	</header>
 
