@@ -1,3 +1,9 @@
 .section-title {
   letter-spacing: -2%;
 }
+
+.reviews-row {
+  @include mq("lg", max) {
+    --bs-gutter-y: 32px;
+  }
+}

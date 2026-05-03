@@ -11,23 +11,34 @@
  *
  * @package megatheme
  */
-$get_template_directory_uri = get_stylesheet_directory_uri();
 
 get_header();
 ?>
     <!-- Main -->
     <main class="main">
-        <section class="section">
+        <section class="section-hero pb-5 py-lg-5 pb-lg-4 my-lg-5">
             <div class="container">
-                <div class="row">
+                <div class="row pt-lg-4 pt-2">
                     <div class="col-12">
-                    <div class="">
-                            <h1 class="display-3 ls-1 section-title text-center">Landing page title</h1>
+                        <div class="text-center">
+                            <h1 class="display-3 ls-1 section-title">Landing page title</h1>
+                            <p class="mt-4 text-secondary">And a subheading describing your site, too</p>
+                            <button class="btn btn-primary mt-4">Send form</button>
                         </div>
+                        <div class="mt-5 pt-lg-5">
+                            <picture>
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/images/hero-mobile.png" media="(max-width: 768px)" />
+                                <img class="rounded-3 w-100" src="<?php echo get_template_directory_uri(); ?>/images/hero-desktop.png" alt="Main image" />
+                            </picture>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
+
+        <?php get_template_part('template-parts/section-testimonials'); ?>
+        
     </main>
 
 <?php

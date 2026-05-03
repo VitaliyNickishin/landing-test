@@ -7,18 +7,7 @@
  *
  * @package ap
  */
-/**
- * Enqueue scripts and styles.
- */
-// function ap_theme_scripts()
-// {
-//     wp_enqueue_style('main', get_stylesheet_directory_uri() . '/assets/css/main.css', false, time());
 
-//     wp_enqueue_script('main.js', get_stylesheet_directory_uri() . '/assets/js/main.js', array(), null, true);
-// }
-
-
-// add_action('wp_enqueue_scripts', 'ap_theme_scripts');
 
 function theme_assets() {
 

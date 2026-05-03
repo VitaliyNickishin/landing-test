@@ -14,16 +14,12 @@
 
 //-------------ui kit-------------------
 @import "base/mixins";
-@import "base/common";
 
 //-------------pages--------------------
 @import "page/index";
 // @import "page/single-post";
 
 //-------------components--------------------
-
-@import "components/btn";
-@import "components/list-social";
 @import "components/navbar";
 
 //-------------layouts--------------------
