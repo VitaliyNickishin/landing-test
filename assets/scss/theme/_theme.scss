@@ -109,3 +109,31 @@ $btn-close-focus-shadow: none !default;
 $border-color-translucent: $gray-200 !default;
 $card-spacer-x: 2rem !default;
 $card-spacer-y: 2rem !default;
+$card-border-radius: 0.75rem !default;
+
+// Icons
+$icon-font-sizes: (
+  "xs": 0.75rem,
+  // 12px,
+  "sm": 1rem,
+  // 16px
+  "md": 1.25rem,
+  // 20px
+  "lg": 1.375rem,
+  // 22px
+  "xl": 1.875rem, // 30px
+) !default;
+
+// Custom icons
+$icon-css-classname-custom: "ci" !default;
+$icon-font-family-custom: "icomoon" !default;
+$icon-font-size-custom: 20px !default;
+$icon-font-sizes-custom: $icon-font-sizes !default;
+$icons-custom-content: (
+  "fb": "\e902",
+  "instagram": "\e904",
+  "linkedin": "\e903",
+  "youtube": "\e905",
+  "burger": "\e901",
+  "close": "\e900",
+) !default;

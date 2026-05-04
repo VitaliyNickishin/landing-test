@@ -15,8 +15,8 @@
 get_header();
 ?>
     <!-- Main -->
-    <main class="main">
-        <section class="section-hero pb-5 py-lg-5 pb-lg-4 my-lg-5">
+    <main class="main py-5">
+        <section class="section-hero pb-5 pb-lg-4 my-lg-5">
             <div class="container">
                 <div class="row pt-lg-4 pt-2">
                     <div class="col-12">

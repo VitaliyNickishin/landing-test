@@ -32,7 +32,7 @@ $cards = [
         <div class="row pt-lg-3 mt-lg-3 reviews-row">
             <?php foreach ($cards as $card): ?>
                 <div class="col-lg-4">
-                    <div class="card shadow">
+                    <div class="card shadow has-scale">
                         <div class="card-body">
                             <h5 class="card-title fw-medium mb-5">
                                 <?php echo esc_html($card['title']); ?>

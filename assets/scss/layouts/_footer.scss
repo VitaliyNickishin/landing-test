@@ -1,0 +1,30 @@
+.footer {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      right: 1rem;
+      height: 1px;
+      background: $border-color;
+    }
+  }
+  .social-links {
+    a {
+      color: $gray;
+      transition: $transition;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

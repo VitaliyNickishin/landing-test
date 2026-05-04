@@ -1,0 +1,7 @@
+a {
+    text-decoration: none;
+    transition: $transition;
+    &:hover {
+        color: $secondary;
+    }
+}

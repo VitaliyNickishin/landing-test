@@ -11,9 +11,11 @@
 
 function theme_assets() {
 
+    $theme_dir = get_template_directory();
+    $theme_uri = get_template_directory_uri();
+
     if (defined('WP_ENV') && WP_ENV === 'development') {
 
-        // DEV  (Vite server)
         wp_enqueue_script(
             'vite-client',
             'http://localhost:5173/@vite/client',
@@ -30,9 +32,8 @@ function theme_assets() {
             true
         );
 
-        // add type="module" for import
         add_filter('script_loader_tag', function ($tag, $handle) {
-            if ($handle === 'theme-js' || $handle === 'vite-client') {
+            if (in_array($handle, ['theme-js', 'vite-client'])) {
                 return str_replace('<script ', '<script type="module" ', $tag);
             }
             return $tag;
@@ -40,24 +41,49 @@ function theme_assets() {
 
     } else {
 
-        // PROD (build)
-        $manifest = json_decode(file_get_contents(get_template_directory() . '/dist/.vite/manifest.json'), true);
-        $main = $manifest['assets/js/main.js'];
+        $manifest_path = $theme_dir . '/dist/.vite/manifest.json';
 
+        if (!file_exists($manifest_path)) {
+            return;
+        }
+
+        $manifest = json_decode(file_get_contents($manifest_path), true);
+
+        // safer entry lookup
+        $entry = null;
+
+        foreach ($manifest as $key => $value) {
+            if (str_ends_with($key, 'main.js')) {
+                $entry = $value;
+                break;
+            }
+        }
+
+        if (!$entry) {
+            return;
+        }
+
+        // JS
         wp_enqueue_script(
             'theme-js',
-            get_template_directory_uri() . '/dist/' . $main['file'],
+            $theme_uri . '/dist/' . $entry['file'],
             [],
             null,
             true
         );
 
-        wp_enqueue_style(
-            'theme-css',
-            get_template_directory_uri() . '/dist/' . $main['css'][0],
-            [],
-            null
-        );
+        // CSS (SAFE CHECK)
+        if (!empty($entry['css'])) {
+            foreach ($entry['css'] as $css_file) {
+                wp_enqueue_style(
+                    'theme-css-' . md5($css_file),
+                    $theme_uri . '/dist/' . $css_file,
+                    [],
+                    null
+                );
+            }
+        }
     }
 }
+
 add_action('wp_enqueue_scripts', 'theme_assets');

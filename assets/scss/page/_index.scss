@@ -7,3 +7,11 @@
     --bs-gutter-y: 32px;
   }
 }
+
+.has-scale {
+  transition: $transition;
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+}

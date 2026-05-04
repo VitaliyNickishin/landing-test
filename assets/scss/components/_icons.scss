@@ -1,0 +1,39 @@
+// stylelint-disable declaration-no-important
+
+// Custom icons
+.#{$icon-css-classname-custom} {
+  font-family: "#{$icon-font-family-custom}" !important;
+  font-size: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  line-height: normal;
+  text-transform: none;
+  speak: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @each $icon, $content in $icons-custom-content {
+    &-#{$icon}::before {
+      content: $content;
+    }
+  }
+
+  &::before {
+    font-size: $icon-font-size-custom;
+  }
+
+  @each $size, $value in $icon-font-sizes {
+    &-#{$size} {
+      width: $value !important;
+      height: $value !important;
+      font-size: 0;
+
+      &::before {
+        font-size: $value !important;
+      }
+    }
+  }
+}

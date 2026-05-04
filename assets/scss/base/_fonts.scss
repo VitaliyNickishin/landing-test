@@ -1,9 +1,6 @@
 @font-face {
   font-family: "Inter";
-  src: url("Inter-Regular.eot");
   src:
-    local("Inter Regular"),
-    local("Inter-Regular"),
     url("../fonts/Inter/Inter-Regular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Inter/Inter-Regular.woff2") format("woff2"),
     url("../fonts/Inter/Inter-Regular.woff") format("woff"),
@@ -14,10 +11,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("Inter-Medium.eot");
   src:
-    local("Inter Medium"),
-    local("Inter-Medium"),
     url("../fonts/Inter/Inter-Medium.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Inter/Inter-Medium.woff2") format("woff2"),
     url("../fonts/Inter/Inter-Medium.woff") format("woff"),
@@ -28,10 +22,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("Inter-Bold.eot");
   src:
-    local("Inter Bold"),
-    local("Inter-Bold"),
     url("../fonts/Inter/Inter-Bold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Inter/Inter-Bold.woff2") format("woff2"),
     url("../fonts/Inter/Inter-Bold.woff") format("woff"),
@@ -39,3 +30,25 @@
   font-weight: bold;
   font-style: normal;
 }
+// Custom icon font
+@font-face {
+  font-family: "icomoon";
+  src:
+    url("../fonts/icomoon/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon/icomoon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: "icomoon";
+//   src:
+//     url("/wp-content/themes/landing/assets/fonts/icomoon/icomoon.ttf")
+//       format("truetype"),
+//     url("/wp-content/themes/landing/assets/fonts/icomoon/icomoon.woff")
+//       format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }

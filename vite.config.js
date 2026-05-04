@@ -23,7 +23,9 @@ export default defineConfig({
         main: path.resolve(__dirname, "assets/js/main.js"),
       },
     },
+    assetsInlineLimit: 0,
   },
+  assetsInclude: ["**/*.woff", "**/*.woff2", "**/*.ttf"],
 
   resolve: {
     alias: {

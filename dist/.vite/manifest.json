@@ -1,0 +1,83 @@
+{
+  "assets/fonts/Inter/Inter-Bold.eot": {
+    "file": "assets/Inter-Bold-DM__1kr4.eot",
+    "src": "assets/fonts/Inter/Inter-Bold.eot"
+  },
+  "assets/fonts/Inter/Inter-Bold.ttf": {
+    "file": "assets/Inter-Bold-D0m5Xa5u.ttf",
+    "src": "assets/fonts/Inter/Inter-Bold.ttf"
+  },
+  "assets/fonts/Inter/Inter-Bold.woff": {
+    "file": "assets/Inter-Bold-Dm1wsqGD.woff",
+    "src": "assets/fonts/Inter/Inter-Bold.woff"
+  },
+  "assets/fonts/Inter/Inter-Bold.woff2": {
+    "file": "assets/Inter-Bold-CQHYVgG_.woff2",
+    "src": "assets/fonts/Inter/Inter-Bold.woff2"
+  },
+  "assets/fonts/Inter/Inter-Medium.eot": {
+    "file": "assets/Inter-Medium-C0pJAE2t.eot",
+    "src": "assets/fonts/Inter/Inter-Medium.eot"
+  },
+  "assets/fonts/Inter/Inter-Medium.ttf": {
+    "file": "assets/Inter-Medium-BaC4k7sN.ttf",
+    "src": "assets/fonts/Inter/Inter-Medium.ttf"
+  },
+  "assets/fonts/Inter/Inter-Medium.woff": {
+    "file": "assets/Inter-Medium-NQOIbdhU.woff",
+    "src": "assets/fonts/Inter/Inter-Medium.woff"
+  },
+  "assets/fonts/Inter/Inter-Medium.woff2": {
+    "file": "assets/Inter-Medium-D5YUpoRx.woff2",
+    "src": "assets/fonts/Inter/Inter-Medium.woff2"
+  },
+  "assets/fonts/Inter/Inter-Regular.eot": {
+    "file": "assets/Inter-Regular-CwtbgAvg.eot",
+    "src": "assets/fonts/Inter/Inter-Regular.eot"
+  },
+  "assets/fonts/Inter/Inter-Regular.ttf": {
+    "file": "assets/Inter-Regular-BeTTpXQ8.ttf",
+    "src": "assets/fonts/Inter/Inter-Regular.ttf"
+  },
+  "assets/fonts/Inter/Inter-Regular.woff": {
+    "file": "assets/Inter-Regular-C05ryuRh.woff",
+    "src": "assets/fonts/Inter/Inter-Regular.woff"
+  },
+  "assets/fonts/Inter/Inter-Regular.woff2": {
+    "file": "assets/Inter-Regular-6EfshmZx.woff2",
+    "src": "assets/fonts/Inter/Inter-Regular.woff2"
+  },
+  "assets/fonts/icomoon/icomoon.ttf": {
+    "file": "assets/icomoon-4E9uPokT.ttf",
+    "src": "assets/fonts/icomoon/icomoon.ttf"
+  },
+  "assets/fonts/icomoon/icomoon.woff": {
+    "file": "assets/icomoon-xnXfRHHy.woff",
+    "src": "assets/fonts/icomoon/icomoon.woff"
+  },
+  "assets/js/main.js": {
+    "file": "assets/main-DXHiOk0B.js",
+    "name": "main",
+    "src": "assets/js/main.js",
+    "isEntry": true,
+    "css": [
+      "assets/main-uMbIGrcM.css"
+    ],
+    "assets": [
+      "assets/Inter-Regular-CwtbgAvg.eot",
+      "assets/Inter-Regular-6EfshmZx.woff2",
+      "assets/Inter-Regular-C05ryuRh.woff",
+      "assets/Inter-Regular-BeTTpXQ8.ttf",
+      "assets/Inter-Medium-C0pJAE2t.eot",
+      "assets/Inter-Medium-D5YUpoRx.woff2",
+      "assets/Inter-Medium-NQOIbdhU.woff",
+      "assets/Inter-Medium-BaC4k7sN.ttf",
+      "assets/Inter-Bold-DM__1kr4.eot",
+      "assets/Inter-Bold-CQHYVgG_.woff2",
+      "assets/Inter-Bold-Dm1wsqGD.woff",
+      "assets/Inter-Bold-D0m5Xa5u.ttf",
+      "assets/icomoon-4E9uPokT.ttf",
+      "assets/icomoon-xnXfRHHy.woff"
+    ]
+  }
+}
