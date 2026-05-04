@@ -18,13 +18,14 @@
 
 //-------------pages--------------------
 @import "page/index";
-// @import "page/single-post";
+@import "page/contact";
 
 //-------------components--------------------
 @import "components/navbar";
 @import "components/card";
 @import "components/icons";
 @import "components/links";
+@import "components/form";
 
 //-------------layouts--------------------
 @import "layouts/footer";

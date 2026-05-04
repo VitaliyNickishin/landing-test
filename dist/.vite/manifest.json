@@ -56,12 +56,12 @@
     "src": "assets/fonts/icomoon/icomoon.woff"
   },
   "assets/js/main.js": {
-    "file": "assets/main-DXHiOk0B.js",
+    "file": "assets/main-DIFYIcxp.js",
     "name": "main",
     "src": "assets/js/main.js",
     "isEntry": true,
     "css": [
-      "assets/main-uMbIGrcM.css"
+      "assets/main-D83kBPEf.css"
     ],
     "assets": [
       "assets/Inter-Regular-CwtbgAvg.eot",

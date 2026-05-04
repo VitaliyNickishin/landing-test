@@ -44,7 +44,7 @@
 							<div class="navbar-nav align-items-center">
 							<a class="nav-link active" href="#">Page</a>
 							<a class="nav-link" href="#">Page</a>
-							<a class="nav-link" href="#">Page</a>
+							<a class="nav-link" href="<?php echo esc_url( home_url('/contact/') ); ?>">Contact us</a>
 							</div>
 
 							<button class="btn btn-primary ms-lg-4 mt-lg-0 mt-5">Send form</button>
